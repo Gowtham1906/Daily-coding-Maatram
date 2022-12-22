@@ -1,0 +1,12 @@
+array1 = [int(i) for i in input().split()]
+
+array2 = []
+
+for i in range(len(array1)):
+    prod = 1
+    array3 = [array1[j] for j in range(len(array1)) if j != i]
+    for j in array3:
+        prod *= j
+    array2.append(prod)
+
+print(array2)
