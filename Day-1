@@ -1,0 +1,12 @@
+array = [int(i) for i in input().split(' ')]
+number = int(input())
+
+count = 0
+for i in array:
+    for j in array:
+        if i+j == number:
+            count += 1
+
+    if count == 1:
+        print('True')
+        break
