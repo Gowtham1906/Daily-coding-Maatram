@@ -1,0 +1,5 @@
+def count_dots(n):
+    n = n-1
+    return ((5*(n**2))+(5*n)+2)//2
+n = int(input())
+print(count_dots(n))
