@@ -1,0 +1,15 @@
+x = input()
+y = int(input())
+z = ""
+list = []
+for i in x:
+    z += i
+    if len(set(z)) < y:
+        continue
+    if len(set(z)) > y:
+        m = z[0]
+        z = z.replace(m, '')
+        continue
+    if len(set(z)) == y:
+        list.append(z)
+print(max(list, key = len))
