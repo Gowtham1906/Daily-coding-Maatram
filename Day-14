@@ -1,0 +1,12 @@
+n=list(input().split(" "))
+f=['a','e','i','o','u']
+a=[]
+for i in range(0,len(n)-1):
+    if n[i][-1] and n[i+1][0] in f:
+        a.append('true')
+    else:
+        a.append('false')
+if 'true' in a:
+    print('true')
+else:
+    print('false')
